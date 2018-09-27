@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+    "flit",
+]
+build-backend = "flit.buildapi"
+
+[tool]
+
+[tool.flit]
+
+[tool.flit.metadata]
+module = "tomlfmt"
+author = "Min RK"
+author-email = "benjaminrk@gmail.com"
+home-page = "https://github.com/minrk/tomlfmt"
+description-file = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires = [
+    "pytoml",
+]
+requires-python = ">=3.4"
+
+[tool.flit.scripts]
+tomlfmt = "tomlfmt:main"
