@@ -23,7 +23,7 @@ classifiers = [
 requires = [
     "pytoml",
 ]
-requires-python = ">=3.4"
+requires-python = ">=3.6"
 
 [tool.flit.scripts]
 tomlfmt = "tomlfmt:main"
