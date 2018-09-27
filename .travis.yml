@@ -1,8 +1,7 @@
 language: python
-dist: xenial
+sudo: false
 python:
   - 3.6
-  - 3.7
 install:
   - pip install --upgrade pip
   - pip install flit pytest pytest-cov codecov
@@ -13,3 +12,7 @@ script:
   - pytest --cov tomlfmt
 after_success:
   - codecov
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
